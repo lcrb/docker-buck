@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get install -y git gcc gdb g++ automake default-jdk ant python make python-dev gcc-arm-none-eabi gdb-arm-none-eabi openocd 
+RUN apt-get update && apt-get install -y git gcc gdb g++ automake default-jdk ant python make python-dev gcc-arm-none-eabi gdb-arm-none-eabi openocd sudo
 
 RUN apt-get install -y autotools-dev automake libtool pkg-config 
 RUN apt-get install -y libssl-dev libglib2.0-dev 
