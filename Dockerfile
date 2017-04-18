@@ -26,7 +26,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends
         wget \
         xz-utils
 
-RUN apt-get update && apt-get install -y build-essential git wget automake python-dev libtool libssl-dev 
+RUN apt-get update && apt-get install -y build-essential git wget automake python-dev libtool libssl-dev curl wget
 
 # Install watchman for buck
 RUN git clone https://github.com/facebook/watchman.git
